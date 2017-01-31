@@ -28,7 +28,11 @@ apiRouter.route('/albums')
 apiRouter.route('/products')
   .get(function(req, res) {
     res.json([
-      {},
+      {name: "iPhone 7 Plus 32GB", manufacturer: "Apple", price: "$769", cover: "https://www.o2.co.uk/shop/homepage/images/shop15/brand/apple/iphone-7-plus/apple-iphone-7-plus-gallery-img-6.jpg"},
+      {name: "Amazon Echo", manufacturer: "Amazon", price: "$179", cover: "https://images-na.ssl-images-amazon.com/images/I/41-v1fozy0L.jpg"},
+      {name: "Xbox One S 2TB", manufacturer: "Microsoft", price: "$399", cover: "https://cnet1.cbsistatic.com/img/Dri_6795D7EYs2dvS-RTfEvwNbc=/770x433/2016/08/01/81dd9937-d2f9-4730-8d9b-cca30379da27/xboxones.jpg"},
+      {name: "2016 MacBook Pro 13-inch", manufacturer: "Apple", price: "$1,499", cover: "https://cnet4.cbsistatic.com/img/LwGV_V7uTl2n_T-eg0db_6sEybA=/770x433/2016/10/27/e361002e-72c9-4b10-bfc1-2be21c508a42/apple-macbook-pro-13-inch-2016-1626-003.jpg"},
+      {name: "55-inch KU7000 4K UHD TV", manufacturer: "Samsung", price: "$899", cover: "http://s7d2.scene7.com/is/image/SamsungUS/Pdpdefault-un55ku7000fxza-600x600-C1-052016"}
     ]);
   })
   .post();
