@@ -17,10 +17,10 @@ apiRouter.route('/albums')
   .get(function(req, res) {
     res.json([
       {title: "The Life of Pablo", artist: "Kanye West", release_date: "February 14, 2016", cover: "https://upload.wikimedia.org/wikipedia/en/4/4d/The_life_of_pablo_alternate.jpg", purcahse: ""},
-      {title: "Cozy Tapes", artist: "A$AP Mob", release_date: "October 31, 2016", cover: "http://static.spin.com/files/2016/10/unnamed-1477488989-640x640.jpg", purcahse: ""},
+      {title: "Cozy Tapes", artist: "A$AP Mob", release_date: "October 31, 2016", cover: "https://static.spin.com/files/2016/10/unnamed-1477488989-640x640.jpg", purcahse: ""},
       {title: "Coloring Book", artist: "Chance The Rapper", release_date: "May 13, 2016", cover: "https://i1.sndcdn.com/artworks-000164666747-vw6nqr-t500x500.jpg", purcahse: ""},
-      {title: "Blank Face LP", artist: "ScHoolboy Q", release_date: "July 8, 2016", cover: "http://static.wixstatic.com/media/a5b417_105c18285e7d41af99fda3e4d210cf83~mv2.jpg", purcahse: ""},
-      {title: "Views", artist: "Drake", release_date: "April 29, 2016", cover: "http://static.djbooth.net/pics-features/drake-cover-art-breakdown.jpg", purcahse: ""}
+      {title: "Blank Face LP", artist: "ScHoolboy Q", release_date: "July 8, 2016", cover: "https://static.wixstatic.com/media/a5b417_105c18285e7d41af99fda3e4d210cf83~mv2.jpg", purcahse: ""},
+      {title: "Views", artist: "Drake", release_date: "April 29, 2016", cover: "https://static.djbooth.net/pics-features/drake-cover-art-breakdown.jpg", purcahse: ""}
     ]);
   })
   .post();
