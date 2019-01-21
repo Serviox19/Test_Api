@@ -25,6 +25,21 @@ apiRouter.route('/albums')
   })
   .post();
 
+  apiRouter.route('/trans')
+    .get(function(req, res) {
+      res.json([
+        {_id: 1, title: "AMZN Mktp US", date: "01/19/2019", price: "15.98"},
+        {_id: 2, title: "INO SUSHI", date: "01/16/2018", price: "22.07"},
+        {_id: 3, title: "SMASHBURGER #1339", date: "01/18/2019", price: "11.91"},
+        {_id: 4, title: "WHOLEFOODS", date: "01/18/2019", price: "157.72"},
+        {_id: 5, title: "PRET A MANGER", date: "01/14/2019", price: "6.52"},
+        {_id: 6, title: "STARBUCKS", date: "01/17/2019", price: "2.34"},
+        {_id: 7, title: "LA FITNESS", date: "01/14/2019", price: "31.98"},
+        {_id: 8, title: "HEALTH KING", date: "01/16/2019", price: "10.83"}
+      ]);
+    })
+    .post();
+
 apiRouter.route('/products')
   .get(function(req, res) {
     res.json([
